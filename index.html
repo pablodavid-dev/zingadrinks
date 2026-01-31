@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>ZINGA DRINKS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- BRAND -->
+    <header class="logo">
+      <h1 class="brand">ZINGA DRINKS</h1>
+    </header>
+
+    <!-- STATUS -->
+    <div id="status-loja" class="status fechado">
+      🔴 Fechado • abre às 19h
+    </div>
+
+    <h2>Escolha sua bebida</h2>
+
+    <!-- ITEM 1 -->
+    <div class="combo destaque">
+      <span class="badge-mais-vendido">Mais vendido</span>
+      <img src="1.png" class="combo-img" alt="Copão Cavalinho">
+      <h3>Copão Cavalinho <span>R$ 20</span></h3>
+      <p>Cavalinho • Baly Tradicional • Gelo de Cocô</p>
+      <div class="controls">
+        <button onclick="remover(0)">−</button>
+        <span id="qtd-0">0</span>
+        <button onclick="adicionar(0)">+</button>
+      </div>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="combo">
+      <img src="2.png" class="combo-img" alt="Gin de Morango">
+      <h3>Gin Frutas Vermelhas <span>R$ 15</span></h3>
+      <p>Gin • Gelo de Morango • Baly Morango</p>
+      <div class="controls">
+        <button onclick="remover(1)">−</button>
+        <span id="qtd-1">0</span>
+        <button onclick="adicionar(1)">+</button>
+      </div>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="combo">
+      <img src="3.png" class="combo-img" alt="Vodka Tropical">
+      <h3>Vodka Tropical <span>R$ 15</span></h3>
+      <p>Vodka Intencion • Gelo de Maracujá • Baly Tropical</p>
+      <div class="controls">
+        <button onclick="remover(2)">−</button>
+        <span id="qtd-2">0</span>
+        <button onclick="adicionar(2)">+</button>
+      </div>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="combo">
+      <img src="4.png" class="combo-img" alt="Combo Brahma">
+      <h3>Combo Brahma <span>R$ 25</span></h3>
+      <p>4 Brahma Chopp • Bem geladas</p>
+      <div class="controls">
+        <button onclick="remover(3)">−</button>
+        <span id="qtd-3">0</span>
+        <button onclick="adicionar(3)">+</button>
+      </div>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="combo">
+      <img src="5.png" class="combo-img" alt="Beats Red Mix">
+      <h3>Beats Red Mix <span>R$ 30</span></h3>
+      <p>4 Beats Red Mix • Bem geladas</p>
+      <div class="controls">
+        <button onclick="remover(4)">−</button>
+        <span id="qtd-4">0</span>
+        <button onclick="adicionar(4)">+</button>
+      </div>
+    </div>
+
+    <!-- RESUMO -->
+    <div class="resumo">
+      <h2>Entrega</h2>
+
+      <input type="text" id="rua" placeholder="Rua / Número">
+
+      <select id="bairro" onchange="calcularTotal()">
+        <option value="">Selecione o bairro</option>
+        <option value="4">Rio Vermelho — R$ 4</option>
+        <option value="6">Ingleses — R$ 6</option>
+      </select>
+
+      <h2>Total: R$ <span id="total">0</span></h2>
+
+      <button class="btn-whatsapp" onclick="enviarPedido()">
+        Pedir no WhatsApp
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

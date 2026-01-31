@@ -1,0 +1,236 @@
+/* ================================
+   RESET / BASE
+================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background: #0b0b0d;
+  color: #f3f4f6;
+}
+
+/* ================================
+   CONTAINER
+================================ */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* ================================
+   BRAND
+================================ */
+.logo {
+  text-align: center;
+  margin: 12px 0 8px;
+}
+
+.brand {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #ff9f1c;
+  text-shadow:
+    0 0 10px rgba(255, 159, 28, 0.9),
+    0 0 24px rgba(255, 140, 0, 0.6);
+}
+
+/* ================================
+   STATUS
+================================ */
+.status {
+  margin: 14px auto 22px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  max-width: 320px;
+}
+
+.status.aberto {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+
+.status.fechado {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+}
+
+/* ================================
+   TITULOS
+================================ */
+h2 {
+  text-align: center;
+  font-size: 22px;
+  margin: 20px 0;
+  color: #ffb703;
+  text-shadow: 0 0 10px rgba(255, 183, 3, 0.45);
+}
+
+/* ================================
+   COMBOS
+================================ */
+.combo {
+  background: linear-gradient(180deg, #111114, #0c0c0f);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 140, 0, 0.18);
+  box-shadow: 0 0 18px rgba(255, 140, 0, 0.15);
+  position: relative;
+}
+
+.combo-img {
+  display: block;
+  margin: 0 auto 14px;
+  max-width: 190px;
+  width: 100%;
+  filter: drop-shadow(0 0 16px rgba(255, 140, 0, 0.5));
+}
+
+.combo h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #ff9f1c;
+}
+
+.combo h3 span {
+  display: block;
+  font-size: 16px;
+  margin-top: 4px;
+  color: #ffd166;
+}
+
+.combo p {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.9;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+/* ================================
+   DESTAQUE
+================================ */
+.combo.destaque {
+  border: 2px solid #ff9f1c;
+  box-shadow:
+    0 0 26px rgba(255, 159, 28, 0.6),
+    inset 0 0 14px rgba(255, 159, 28, 0.25);
+}
+
+.badge-mais-vendido {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff9f1c;
+  color: #000;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 800;
+  border-radius: 999px;
+  box-shadow: 0 0 14px rgba(255, 159, 28, 0.9);
+}
+
+/* ================================
+   CONTROLES
+================================ */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.controls button {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: none;
+  background: #ff9f1c;
+  color: #000;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.controls span {
+  font-size: 20px;
+  font-weight: 700;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* ================================
+   RESUMO
+================================ */
+.resumo {
+  background: linear-gradient(180deg, #111114, #0c0c0f);
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 28px;
+  box-shadow: 0 0 22px rgba(255, 140, 0, 0.25);
+}
+
+.resumo h2 {
+  margin-bottom: 12px;
+}
+
+/* ================================
+   INPUTS
+================================ */
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 140, 0, 0.35);
+  background: #0b0b0d;
+  color: #f3f4f6;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+/* ================================
+   BOTÃO WHATSAPP
+================================ */
+.btn-whatsapp {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(90deg, #ff9f1c, #ff7a00);
+  color: #000;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 0 26px rgba(255, 140, 0, 0.95);
+}
+
+/* ================================
+   DESKTOP
+================================ */
+@media (min-width: 768px) {
+  .brand {
+    font-size: 40px;
+  }
+
+  .combo-img {
+    max-width: 240px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
